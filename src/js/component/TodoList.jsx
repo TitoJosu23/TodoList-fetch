@@ -10,10 +10,9 @@ const TodoList = () => {
 	const getAllTodos = async function () {
 		const options = {
 			method: "GET",
-			//body: JSON.stringify(null),
 		};
 		const response = await fetch(
-			"https://assets.breatheco.de/apis/fake/todos/user/unicorn",
+			"https://assets.breatheco.de/apis/fake/todos/user/jonathanList",
 			options
 		);
 		setList(await response.json());
@@ -31,7 +30,7 @@ const TodoList = () => {
 			headers: { "content-type": "application/json" },
 		};
 		const response = await fetch(
-			"https://assets.breatheco.de/apis/fake/todos/user/unicorn",
+			"https://assets.breatheco.de/apis/fake/todos/user/jonathanList",
 			options
 		);
 	};
