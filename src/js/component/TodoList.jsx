@@ -12,14 +12,13 @@ const TodoList = () => {
 			method: "GET",
 		};
 		const response = await fetch(
-			"https://assets.breatheco.de/apis/fake/todos/user/jonathanList",
+			"https://assets.breatheco.de/apis/fake/todos/user/josu",
 			options
 		);
 		setList(await response.json());
 	};
 
 	useEffect(() => {
-		//code goes here
 		getAllTodos();
 	}, []);
 
@@ -30,7 +29,7 @@ const TodoList = () => {
 			headers: { "content-type": "application/json" },
 		};
 		const response = await fetch(
-			"https://assets.breatheco.de/apis/fake/todos/user/jonathanList",
+			"https://assets.breatheco.de/apis/fake/todos/user/josu",
 			options
 		);
 	};
